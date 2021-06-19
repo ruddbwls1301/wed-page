@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT교실</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      background-color:  black;
+    }
+    body{
+      margin: 0 auto;
+      width: 600px;
+    }
+    .header{
+      background-color: gray;
+      padding: 20px;
+      text-align: center;
+      
+    }
+    .MENU{
+      overflow: hidden;
+      
+    }
+    .MENU a{
+      float: center;
+      display: block;
+      color: gray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin: 0px;
+    }
+    .MENU a:hover{
+      background-color: gray;
+      color: white;
+    }
+    .column{
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+    .row::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width:600px){
+      .column{
+        width: 100%;
+      }
+    }
+    p{
+      font-size: 140%;
+
+      
+    }
+    #sound{
+      float: center;
+      display: block;
+      color: gray;
+      text-align: center;
+      padding: 14px 16px;
+      margin: 0px;
+
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <h1 class="header">PT #</h1>
+</div>
+
+<div class="MENU">
+  <a href="http://127.0.0.1:5500/image/%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%802.html"><p><b>등</b></p></a>
+  <a href="http://127.0.0.1:5500/image/%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%803.html"><p><b>가슴</b></p></a>
+  <a href="http://127.0.0.1:5500/image/%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80.4.html"><p><b>하체</b></p></a>
+  <a href="http://127.0.0.1:5500/image/%EC%9B%9D%ED%8E%98%EC%9D%B4%EC%A7%80.5.html"><p><b>어깨</b></p></a>
+  <a href="http://127.0.0.1:5500/image/%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80.6.html"><p><b>팔</b></p></a>
+</div>
+<div id="sound">
+  <audio src="Ikson - Wanna.wav" controls autoplay loop></audio>
+</div>
+</div>
+</body>
+</html>
